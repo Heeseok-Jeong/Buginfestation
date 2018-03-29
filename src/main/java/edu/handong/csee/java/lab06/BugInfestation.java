@@ -37,7 +37,6 @@ public class BugInfestation { //make a class 'BugInfestation'
 		System.out.println("They will fill a volume of " + + " cubic feet"); //print about how much bugs volume
 		System.out.println("Better call Debugging Experts Inc."); //print some message
 		 
-		buginf.
 	}
 	
 	/**
