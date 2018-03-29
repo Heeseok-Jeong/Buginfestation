@@ -64,5 +64,4 @@ public class BugInfestation { //make a class 'BugInfestation'
 			countWeeks ++; //plus 1 to countWeeks when next line
 		}
 	}
-	
 }
