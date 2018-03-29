@@ -24,6 +24,8 @@ public class BugInfestation { //make a class 'BugInfestation'
 		BugInfestation buginf = new BugInfestation(); //instantiate buginf
 		Scanner keyboard = new Scanner(System.in); //instantiate keyboard
 		
+		
+		
 		System.out.println("Enter the total volume of your house"); //print some message
 		System.out.println("in cubic feet : "); //print some message
 		houseVolume = keyboard.nextDouble(); //get a house volume value from user
@@ -32,9 +34,13 @@ public class BugInfestation { //make a class 'BugInfestation'
 		startPopulation = keyboard.nextInt(); //get a start population value from user
 		System.out.println("Starting with a roach population of " + startPopulation); //print about start population
 		System.out.println("and a house with a volume of " + houseVolume + " cubic feet,"); //print about house volume
-		System.out.println("after " + + " weeks,"); //print about how many weeks 
-		System.out.println("the house will be filled with " + + " roaches."); //print about how many bugs
-		System.out.println("They will fill a volume of " + + " cubic feet"); //print about how much bugs volume
+		
+		buginf.hVolume = houseVolume; //hVolume's value is houseVolumes's value
+		buginf.sPopulation = startPopulation; //sPopulation's value is startPopulation's value
+		
+		System.out.println("after " + buginf.computeWeek() + " weeks,"); //print about how many weeks 
+		System.out.println("the house will be filled with " + buginf.computeBugPopulation() + " roaches."); //print about how many bugs
+		System.out.println("They will fill a volume of " + buginf.computeBugVolume() + " cubic feet"); //print about how much bugs volume
 		System.out.println("Better call Debugging Experts Inc."); //print some message
 		 
 	}
@@ -42,6 +48,21 @@ public class BugInfestation { //make a class 'BugInfestation'
 	/**
 	 * this method computes how long weeks be taken and how many bugs are in a house 
 	 */
-	public void computeWeekAndBug ()
-
+	public int computeWeek() { //make a method 
+	
+	}
+	
+	/**
+	 * this method computes how many bugs are in a house 
+	 */
+	public int computeBugPopulation() { //make a method
+		
+	}
+	
+	/**
+	 * this method computes how much bug's volume is 
+	 */
+	public double computeBugVolume() { //make a method
+		
+	}
 }
